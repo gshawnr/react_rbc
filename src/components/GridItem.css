@@ -1,0 +1,39 @@
+.ft-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  padding: 3%;
+}
+
+.gi-header {
+  color: white;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.gi-footer {
+  color: white;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.gi-ul {
+  color: white;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.gi-li {
+  margin: 15px 0;
+}
+
+.gi-li a {
+  text-decoration: none;
+}
+
+.gi-li a:visited {
+  color: white;
+}
+.gi-li a:hover {
+  text-decoration: underline;
+}
