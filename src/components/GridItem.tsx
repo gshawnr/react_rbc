@@ -1,4 +1,5 @@
 import React from "react";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 import "./GridItem.css";
 
@@ -27,23 +28,34 @@ function GridItem({
 }: GridItemProps) {
   return (
     <>
-      <h1 className="gi-header">{headerText}</h1>
+      <h6 className="gi-header gi-nowrap">{headerText}</h6>
       <ul className="gi-ul">
-        {headerlinks?.map((thisLink) => {
+        {headerlinks?.map((thisLink, index) => {
           return (
-            <li className="gi-li">
+            <li key={index} className="gi-li">
+              <ChevronRightIcon />
               <a href="#">{thisLink.linkText}</a>
             </li>
           );
         })}
       </ul>
+      {itemImage ? (
+        <a href="#" style={{ textAlign: "left" }}>
+          <img
+            src={itemImage}
+            aria-label="CDIC logo"
+            style={{ width: "139px" }}
+          />
+        </a>
+      ) : null}
       {footerText ? (
         <>
-          <h1 className="gi-footer">{footerText}</h1>
+          <h6 className="gi-footer">{footerText}</h6>
           <ul className="gi-ul">
-            {footerlinks?.map((thisLink) => {
+            {footerlinks?.map((thisLink, index) => {
               return (
-                <li className="gi-li">
+                <li key={index} className="gi-li">
+                  <ChevronRightIcon />
                   <a href="#">{thisLink.linkText}</a>
                 </li>
               );

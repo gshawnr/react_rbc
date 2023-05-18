@@ -4,15 +4,20 @@
   padding: 3%;
 }
 
+.gi-container {
+  margin: 0 15px;
+  text-align: left;
+}
+
 .gi-header {
   color: white;
-  font-size: 1.1rem;
+  margin: 0 0 15px;
   text-align: left;
 }
 
 .gi-footer {
   color: white;
-  font-size: 1.1rem;
+  margin: 40px 0 15px;
   text-align: left;
 }
 
@@ -24,10 +29,15 @@
 }
 
 .gi-li {
-  margin: 15px 0;
+  align-items: flex-start;
+  display: flex;
+  font-size: 1.6rem;
+  margin: 0 0 15px;
 }
 
 .gi-li a {
+  display: block;
+  font-size: inherit;
   text-decoration: none;
 }
 
@@ -36,4 +46,8 @@
 }
 .gi-li a:hover {
   text-decoration: underline;
+}
+
+.gi-nowrap {
+  white-space: nowrap;
 }

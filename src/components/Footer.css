@@ -1,7 +1,45 @@
-.footer-top {
+.ft {
   background-color: #006ac3;
 }
 
-.footer-bottom {
+.ft-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fb {
   background-color: #585858;
+  color: #fff;
+}
+
+.fb-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fb-left-link {
+  text-decoration: none;
+  color: #fff;
+}
+.fb-left-link:visited {
+  text-decoration: none;
+}
+
+.fb-right {
+  display: flex;
+}
+
+.fb-social-links {
+  display: flex;
+}
+
+.fb-social-links li {
+  list-style: none;
+}
+
+.fb-nowrap {
+  white-space: nowrap;
 }

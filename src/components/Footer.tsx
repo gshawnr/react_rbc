@@ -1,15 +1,27 @@
 import React from "react";
 
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+
 import GridItem from "./GridItem";
+import cdicImage from "../assets/images/cdic-digital-symbol-en.svg";
 
 import "./Footer.css";
 
 function Footer() {
+  const socialIconStyle = {
+    color: "#fff",
+    backgroundColor: "transparent",
+    padding: 0,
+  };
   return (
     <footer>
-      <div className="footer-top">
+      <div className="ft">
         <div className="ft-grid">
-          <div>
+          <div className="gi-container">
             <GridItem
               headerText="About RBC"
               headerlinks={[
@@ -21,7 +33,7 @@ function Footer() {
               footerlinks={[{ linkText: "Careers at RBC" }]}
             />
           </div>
-          <div>
+          <div className="gi-container">
             <GridItem
               headerText="Customer Service"
               headerlinks={[
@@ -32,7 +44,7 @@ function Footer() {
               ]}
             />
           </div>
-          <div>
+          <div className="gi-container">
             <GridItem
               headerText="Daily Numbers"
               headerlinks={[
@@ -43,7 +55,7 @@ function Footer() {
               ]}
             />
           </div>
-          <div>
+          <div className="gi-container">
             <GridItem
               headerText="Protecting Your Money"
               headerlinks={[
@@ -51,11 +63,68 @@ function Footer() {
                   linkText: "Canada Deposit Insurance Corporation Member Info",
                 },
               ]}
+              itemImage={cdicImage}
             />
           </div>
         </div>
       </div>
-      <div className="footer-bottom"></div>
+      <div className="fb">
+        <div className="fb-container">
+          <div className="fb-left">
+            <p>
+              Royal Bank of Canada Website,
+              <span className="fb-nowrap"> &copy; 1995-2023</span>
+            </p>
+            <p className="fb-left-links fb-nowrap">
+              <a className="fb-left-link" href="#">
+                Legal
+              </a>
+              {" | "}{" "}
+              <a className="fb-left-link" href="#">
+                Accessibility
+              </a>{" "}
+              {" | "}
+              <a className="fb-left-link" href="#">
+                Privacy & Security
+              </a>
+              {" | "}
+              <a className="fb-left-link" href="#">
+                Interest Based Advertising
+              </a>
+            </p>
+          </div>
+          <div className="fb-right">
+            <ul className="fb-social-links">
+              <li key="facebook">
+                <a href="#" aria-label="facebook">
+                  <FacebookIcon style={socialIconStyle} />
+                </a>
+              </li>
+              <li key="instagram">
+                <a href="#" aria-label="instagram">
+                  <InstagramIcon style={socialIconStyle} />
+                </a>
+              </li>
+              <li key="twitter">
+                <a href="#" aria-label="twitter">
+                  <TwitterIcon style={socialIconStyle} />
+                </a>
+              </li>
+              <li key="youtube">
+                <a href="#" aria-label="youtube">
+                  <YouTubeIcon style={socialIconStyle} />
+                </a>
+              </li>
+              <li key="linkedin">
+                <a href="#" aria-label="linkedin">
+                  <LinkedInIcon style={socialIconStyle} />
+                </a>
+              </li>
+            </ul>
+            <p>Top</p>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }
