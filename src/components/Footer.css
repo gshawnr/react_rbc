@@ -1,10 +1,14 @@
 .ft {
   background-color: #006ac3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ft-grid {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 110px;
+  padding: 60px 15px;
 }
 
 .fb {
@@ -15,9 +19,20 @@
 .fb-container {
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.fb-left {
+  text-align: left;
+}
+
+.fb-left p {
+  line-height: 2.4rem;
+  font-size: 16px;
+  margin: 0;
 }
 
 .fb-left-link {
@@ -32,12 +47,33 @@
   display: flex;
 }
 
+.fb-to-top {
+  border-left: solid thin white;
+  margin-left: 20px;
+}
+
+.fb-to-top p {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
 .fb-social-links {
   display: flex;
 }
 
 .fb-social-links li {
   list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.fb-to-top-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fb-to-top-link:visited {
+  text-decoration: none;
 }
 
 .fb-nowrap {

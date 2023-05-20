@@ -1,0 +1,40 @@
+.map-box {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.map-info-box {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1200px;
+  margin: 0 15px;
+  padding: 60px 15px;
+  width: 80%;
+}
+
+.map-info-box-inner {
+  background-color: white;
+  border: solid thin lightgray;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.map-box-header {
+  color: #252525;
+  margin: 0 0 15px;
+  font-size: 3.6rem;
+}
+
+.map-box-text {
+  margin: 0 0 15px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.map-search-box {
+}
+
+.map-box-footer {
+}

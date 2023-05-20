@@ -1,10 +1,9 @@
-import React from "react";
-
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 import GridItem from "./GridItem";
 import cdicImage from "../assets/images/cdic-digital-symbol-en.svg";
@@ -15,7 +14,9 @@ function Footer() {
   const socialIconStyle = {
     color: "#fff",
     backgroundColor: "transparent",
-    padding: 0,
+    height: "27px",
+    width: "27px",
+    marginLeft: "25px",
   };
   return (
     <footer>
@@ -121,7 +122,12 @@ function Footer() {
                 </a>
               </li>
             </ul>
-            <p>Top</p>
+            <div className="fb-to-top">
+              <a className="fb-to-top-link" href="#top" aria-label="top">
+                <ArrowUpwardIcon sx={{ fontSize: 25, marginLeft: "20px" }} />
+                <p>Top</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
